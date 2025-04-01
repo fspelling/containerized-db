@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ContainerizedDB.Domain\ContainerizedDB.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

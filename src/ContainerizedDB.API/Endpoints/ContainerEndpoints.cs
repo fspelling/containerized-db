@@ -8,7 +8,7 @@ namespace ContainerizedDB.API.Endpoints
     {
         public static void MapContainerEndpoints(this IEndpointRouteBuilder app)
         {
-            app.MapPost("api/containers", async (ContainerCreateRequest request, IGenerateDBService generateDBService) =>
+            app.MapPost("/containers", async (ContainerCreateRequest request, IGenerateDBService generateDBService) =>
             {
                 var response = await generateDBService.CreateDatabase(DbTypeEnum.None, "", "");
                 Results.Ok(response);

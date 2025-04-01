@@ -16,4 +16,9 @@
     <Folder Include="Endpoints\Response\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.1.4" />
+  </ItemGroup>
+
 </Project>

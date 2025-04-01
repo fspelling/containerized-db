@@ -16,3 +16,4 @@
 /src/ContainerizedDB.IoC/obj
 /src/ContainerizedDB.SDKs/bin/Debug/net9.0
 /src/ContainerizedDB.SDKs/obj
+/src/ContainerizedDB.DomainService/bin/Debug/net9.0

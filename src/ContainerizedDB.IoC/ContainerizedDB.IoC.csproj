@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ContainerizedDB.Application\ContainerizedDB.DomainService.csproj" />
+    <ProjectReference Include="..\ContainerizedDB.DomainService\ContainerizedDB.DomainService.csproj" />
     <ProjectReference Include="..\ContainerizedDB.Domain\ContainerizedDB.Domain.csproj" />
     <ProjectReference Include="..\ContainerizedDB.SDKs\ContainerizedDB.ServiceSDKs.csproj" />
   </ItemGroup>
