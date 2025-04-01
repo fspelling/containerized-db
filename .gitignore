@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ContainerizedDB/v17
+/src/.vs
+/src/ContainerizedDB.API/bin/Debug/net9.0
+/src/ContainerizedDB.API/obj
+/src/ContainerizedDB.Application/bin/Debug/net9.0
+/src/ContainerizedDB.Application/obj
+/src/ContainerizedDB.Data/obj
+/src/ContainerizedDB.Domain/bin/Debug/net9.0
+/src/ContainerizedDB.Domain/obj
+/src/ContainerizedDB.DomainService/obj
+/src/ContainerizedDB.IoC/bin/Debug/net9.0
+/src/ContainerizedDB.IoC/obj
+/src/ContainerizedDB.SDKs/bin/Debug/net9.0
+/src/ContainerizedDB.SDKs/obj
