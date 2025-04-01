@@ -8,7 +8,7 @@ namespace ContainerizedDB.DomainService
     {
         private readonly IDockerService _dockerService = dockerService;
 
-        public async Task<int> CreateDatabase(DbTypeEnum dbType, string user, string password, string? db)
+        public async Task<int> CreateDatabase(DbTypeEnum dbType, string user, string password, string? db = null)
         {
             if (user is null || password is null)
                 throw new ArgumentNullException("Credenciais nao informado!");
