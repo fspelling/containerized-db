@@ -6,6 +6,7 @@ using System.Text.Json.Serialization;
 namespace ContainerizedDB.API.Config
 {
     [JsonSerializable(typeof(ContainerInputModel))]
+    [JsonSerializable(typeof(CustomResponseViewModel))]
     [JsonSerializable(typeof(CustomResponseViewModel<ContainerViewModel>))]
     [JsonSerializable(typeof(CustomResponseViewModel<List<ContainerViewModel>>))]
     internal partial class AppJsonSerializerContext : JsonSerializerContext

@@ -15,7 +15,7 @@ namespace ContainerizedDB.ServiceSDKs
 
         private const string IMAGE_SQL= "postgres:16.8-alpine3.20";
         private const string IMAGE_NOSQL = "mongodb:latest";
-        private const string VOLUME_SQL = "postgres:16.8-alpine3.20";
+        private const string VOLUME_SQL = "/var/lib/postgresql/data";
         private const string VOLUME_NOSQL = "/data/db";
         private const int PORT_BINDING_SQL = 5432;
         private const int PORT_BINDING_NOSQL = 27017;
@@ -29,6 +29,7 @@ namespace ContainerizedDB.ServiceSDKs
             var volumeDocker = await CreateVolumeContainerBD(dbType);
             var imageDatabase = dbType == DbTypeEnum.Sql ? IMAGE_SQL : IMAGE_NOSQL;
             var volumeDatabase = dbType == DbTypeEnum.Sql ? VOLUME_SQL : VOLUME_NOSQL;
+            var portBindingContainer = dbType == DbTypeEnum.Sql ? PORT_BINDING_SQL : PORT_BINDING_NOSQL;
 
             var responseContainer = await _dockerClient.Containers.CreateContainerAsync(new CreateContainerParameters
             {
@@ -44,7 +45,7 @@ namespace ContainerizedDB.ServiceSDKs
                     Binds = new List<string> { $"{volumeDocker.Name}:{volumeDatabase}" },
                     PortBindings = new Dictionary<string, IList<PortBinding>>
                     {
-                        { $"{PORT_BINDING_SQL}/tcp", new List<PortBinding> { new PortBinding { HostPort = portBindingCreate.ToString() } }}
+                        { $"{portBindingContainer}/tcp", new List<PortBinding> { new PortBinding { HostPort = portBindingCreate.ToString() } }}
                     }
                 }
             });
