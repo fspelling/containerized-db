@@ -1,6 +1,6 @@
-﻿using ContainerizedDB.Domain.Interfaces.Services;
+﻿using ContainerizedDB.Application.Services;
+using ContainerizedDB.Domain.Interfaces.Services;
 using ContainerizedDB.Domain.Interfaces.ServiceSDKs;
-using ContainerizedDB.DomainService;
 using ContainerizedDB.ServiceSDKs;
 using Docker.DotNet;
 using Microsoft.Extensions.DependencyInjection;

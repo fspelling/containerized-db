@@ -5,7 +5,9 @@ using Scalar.AspNetCore;
 var builder = WebApplication.CreateSlimBuilder(args);
 
 builder.Services.ConfigureHttpJsonOptions(options =>
-    options.SerializerOptions.TypeInfoResolverChain.Insert(0, AppJsonSerializerContext.Default));
+{
+    options.SerializerOptions.TypeInfoResolverChain.Insert(0, AppJsonSerializerContext.Default);
+});
 
 builder.Services.AddOpenApi();
 builder.Services.ConfigureInjectDependency();
@@ -16,7 +18,7 @@ app.MapOpenApi();
 app.UseHttpsRedirection();
 app.MapScalarApiReference();
 
-var fullApi = app.MapGroup("api");
-fullApi.MapContainerEndpoints();
+var mapEndpointContainers = app.MapGroup("api/containersDB");
+mapEndpointContainers.MapContainerEndpoints();
 
 app.Run();

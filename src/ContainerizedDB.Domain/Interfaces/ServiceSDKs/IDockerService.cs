@@ -1,8 +1,14 @@
-﻿namespace ContainerizedDB.Domain.Interfaces.ServiceSDKs
+﻿using ContainerizedDB.Domain.Entidades;
+using ContainerizedDB.Domain.Enums;
+
+namespace ContainerizedDB.Domain.Interfaces.ServiceSDKs
 {
     public interface IDockerService
     {
-        Task<int> CriarDatabaseSql(string user, string password, string db);
-        Task<int> CriarDatabaseNoSql(string rootUser, string rootPassword);
+        Task<ContainerDB> CriarContainer(DbTypeEnum dbType, List<string> envs);
+        Task<List<ContainerDB>> ListarContainers();
+        Task IniciarContainer(string idContainer);
+        Task PausarContainer(string idContainer);
+        Task RemoverContainer(string idContainer);
     }
 }

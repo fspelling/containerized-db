@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{988D1F11-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{A2EF7C24-7768-43FB-94CD-D98256C79475}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - DomainService", "1 - DomainService", "{C7B24E4A-727D-43E1-935D-BF852CF8F61A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{C7B24E4A-727D-43E1-935D-BF852CF8F61A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{9019F0E1-0BB7-4444-A152-6D7E05A5ED63}"
 EndProject
@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerizedDB.IoC", "Cont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerizedDB.API", "ContainerizedDB.API\ContainerizedDB.API.csproj", "{4A94243E-70D8-4B99-8BAB-5C5665402966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerizedDB.DomainService", "ContainerizedDB.DomainService\ContainerizedDB.DomainService.csproj", "{FCC25A7A-CC9C-4832-82DF-2A435970F9E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerizedDB.Application", "ContainerizedDB.Application\ContainerizedDB.Application.csproj", "{04A8C458-E46B-7AFB-A6D0-58945E2387FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +49,10 @@ Global
 		{4A94243E-70D8-4B99-8BAB-5C5665402966}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A94243E-70D8-4B99-8BAB-5C5665402966}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A94243E-70D8-4B99-8BAB-5C5665402966}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCC25A7A-CC9C-4832-82DF-2A435970F9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCC25A7A-CC9C-4832-82DF-2A435970F9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCC25A7A-CC9C-4832-82DF-2A435970F9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCC25A7A-CC9C-4832-82DF-2A435970F9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A8C458-E46B-7AFB-A6D0-58945E2387FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A8C458-E46B-7AFB-A6D0-58945E2387FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A8C458-E46B-7AFB-A6D0-58945E2387FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A8C458-E46B-7AFB-A6D0-58945E2387FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,7 +67,7 @@ Global
 		{CD3A3FBF-16B1-43D8-B9B8-46B5AE1F4870} = {2467A967-3682-4911-AC23-F64FC1BAA1FF}
 		{AF3B8965-EE61-42FC-9812-39C6E13CAE08} = {2467A967-3682-4911-AC23-F64FC1BAA1FF}
 		{4A94243E-70D8-4B99-8BAB-5C5665402966} = {5E5E10C7-6476-43CB-8DBC-8BB756D4C477}
-		{FCC25A7A-CC9C-4832-82DF-2A435970F9E0} = {C7B24E4A-727D-43E1-935D-BF852CF8F61A}
+		{04A8C458-E46B-7AFB-A6D0-58945E2387FE} = {C7B24E4A-727D-43E1-935D-BF852CF8F61A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A9E1149-667C-48A8-BCB5-F06783BB25D9}
