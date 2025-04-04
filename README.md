@@ -60,6 +60,56 @@ Se você deseja contribuir para o desenvolvimento deste projeto, siga os passos 
    ```bash
    git checkout -b feature/nova-funcionalidade
 
+3. **Faça suas alterações**: Implemente a funcionalidade ou correção desejada.
+
+   - **Adicione novos recursos**: Implemente novos endpoints, funcionalidades ou melhore as existentes.
+   - **Corrija bugs**: Se você encontrou um bug, tente corrigi-lo antes de enviar o pull request.
+   - **Escreva testes**: Se possível, adicione testes para garantir que as alterações não quebrem funcionalidades existentes.
+   - **Siga os padrões de código**: Mantenha o estilo de código consistente com o do projeto. Use identação de 4 espaços e sempre prefira legibilidade.
+
+4. **Commit as alterações**: Após realizar as modificações, faça o commit das suas alterações com uma mensagem clara e objetiva. Por exemplo:
+
+   ```bash
+   git commit -am 'Adiciona nova funcionalidade de gerenciamento de containers'
+
+Mensagens de commit devem ser curtas, claras e no tempo presente, descrevendo a mudança feita. Exemplos:
+- "Adiciona endpoint para criação de containers"
+- "Corrige erro na listagem de containers"
+- "Melhora a validação de parâmetros no endpoint de criação"
+
+Certifique-se de que cada commit seja focado em uma única mudança ou correção, para facilitar o entendimento e a revisão.
+
+---
+
+5. **Push para o repositório remoto**: Após realizar o commit das suas alterações, envie as modificações para o seu repositório no GitHub:
+
+   ```bash
+   git push origin feature/nova-funcionalidade
+
+Isso vai atualizar o seu fork no GitHub com as alterações feitas.
+
+6. **Abra um Pull Request (PR)**: Vá até o seu repositório no GitHub e abra um Pull Request para o repositório original. No PR, forneça uma descrição detalhada do que foi alterado e o porquê. Isso ajuda na revisão e no entendimento das mudanças feitas.
+
+   - **Título**: Mantenha o título do PR claro e objetivo.
+   - **Descrição**: Explique o que foi alterado, por que a alteração foi necessária e se há algo mais a ser considerado. Se o PR estiver resolvendo um problema específico ou adicionando uma nova funcionalidade, mencione isso na descrição.
+
+   Um exemplo de descrição de PR poderia ser:
+   ```markdown
+   ### Descrição
+   Adiciona um novo endpoint `GET /containers` para listar todos os containers em execução e suas respectivas portas.
+
+   ### Como testar
+   1. Crie um novo container utilizando o endpoint `POST /create-container`.
+   2. Faça uma requisição `GET /containers` para obter a lista de containers.
+   3. Verifique se o retorno inclui as informações corretas.
+
+   ### Relacionado
+   - Issue #42: Adicionar endpoint para listar containers.
+   
+- Issue #42: Adicionar endpoint para listar containers.
+
+Após abrir o Pull Request, o repositório será analisado pelos mantenedores do projeto, que revisarão suas mudanças. Caso tudo esteja correto, o PR será aprovado e mesclado ao repositório principal.
+
 ---
 
 ## 📃 Licença
