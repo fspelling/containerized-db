@@ -32,7 +32,7 @@ Antes de executar este projeto, você precisará garantir que tenha os seguintes
 
 ---
 
-## Como Funciona
+## 🔍 Como Funciona
 
 ### 1. Gerenciamento de Containers com Docker SDK
 
